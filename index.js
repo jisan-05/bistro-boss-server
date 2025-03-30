@@ -168,7 +168,7 @@ async function run() {
                     recipe:item.recipe,
                     image:item.image
                 }
-            }
+            }  
             const result = await menuCollection.updateOne(filter,updatedDoc)
             res.send(result)
         })
